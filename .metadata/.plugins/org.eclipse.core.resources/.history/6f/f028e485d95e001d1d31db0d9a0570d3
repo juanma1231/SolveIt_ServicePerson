@@ -1,0 +1,99 @@
+package com.solveit.serviceperson.domain;
+
+import java.util.UUID;
+
+public class PersonDomain {
+	private UUID id;
+	private String name;
+	private String lastName;
+	private int idNumber;
+	private IdTypeDomain idType;
+	private int phoneNumber;
+	private String mail;
+	private String description;
+	private ZoneDomain zone;
+	private String password;
+	
+	
+	public static PersonDomian create(final UUID id, final String name, final String lastName, final int idNumber, final IdTypeDomain idType, final int phoneNumber, final String mail, final String description,
+			final ZoneDomain zone, final String password) {
+		
+	}
+	public PersonDomain(UUID id, String name, String lastName, int idNumber, IdTypeDomain idType, int phoneNumber,
+			String mail, String descriptio, ZoneDomain zone, String password) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.lastName = lastName;
+		this.idNumber = idNumber;
+		this.idType = idType;
+		this.phoneNumber = phoneNumber;
+		this.mail = mail;
+		this.description = descriptio;
+		this.zone = zone;
+		this.password = password;
+	}
+	public final void setId(UUID id) {
+		this.id = id;
+	}
+	public final void setName(String name) {
+		this.name = name;
+	}
+	public final void setLastName(String lastName) {
+		this.lastName = lastName;
+	}
+	public final void setIdNumber(int idNumber) {
+		this.idNumber = idNumber;
+	}
+	public final void setIdType(IdTypeDomain idType) {
+		this.idType = idType;
+	}
+	public final void setPhoneNumber(int phoneNumber) {
+		this.phoneNumber = phoneNumber;
+	}
+	public final void setMail(String mail) {
+		this.mail = mail;
+	}
+	public final void setDescription(String descriptio) {
+		this.description = descriptio;
+	}
+	public final void setZone(ZoneDomain zone) {
+		this.zone = zone;
+	}
+	public final void setPassword(String password) {
+		this.password = password;
+	}
+	public final UUID getId() {
+		return id;
+	}
+	public final String getName() {
+		return name;
+	}
+	public final String getLastName() {
+		return lastName;
+	}
+	public final int getIdNumber() {
+		return idNumber;
+	}
+	public final IdTypeDomain getIdType() {
+		return idType;
+	}
+	public final int getPhoneNumber() {
+		return phoneNumber;
+	}
+	public final String getMail() {
+		return mail;
+	}
+	public final String getDescription() {
+		return description;
+	}
+	public final ZoneDomain getZone() {
+		return zone;
+	}
+	public final String getPassword() {
+		return password;
+	}
+	
+	
+
+}
