@@ -1,0 +1,21 @@
+package com.solveit.serviceperson.application.dtoassembler.implementation;
+
+import com.solveit.serviceperson.application.dtoassembler.DTOAssembler;
+import com.solveit.serviceperson.domain.PersonDomain;
+import com.solveit.serviceperson.dto.PersonDTO;
+
+public class PersonDTOAssembler implements DTOAssembler<PersonDTO, PersonDomain> {
+
+	@Override
+	public PersonDomain assembleDomain(PersonDTO dto) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public PersonDTO assembleDTO(PersonDomain domain) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

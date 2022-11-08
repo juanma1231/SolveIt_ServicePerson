@@ -1,0 +1,5 @@
+package com.solveit.serviceperson.crosscuting.utils;
+
+public class UtilUUID {
+
+}

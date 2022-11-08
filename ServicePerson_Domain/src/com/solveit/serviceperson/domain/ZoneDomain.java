@@ -2,7 +2,7 @@ package com.solveit.serviceperson.domain;
 
 import java.util.UUID;
 
-public class ZoneDomain {
+public final class ZoneDomain {
 	private UUID id;
 	private String corregimiento;
 	private String description;

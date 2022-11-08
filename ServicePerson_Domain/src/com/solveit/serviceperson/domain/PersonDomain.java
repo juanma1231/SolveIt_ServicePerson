@@ -2,7 +2,7 @@ package com.solveit.serviceperson.domain;
 
 import java.util.UUID;
 
-public class PersonDomain {
+public final class PersonDomain {
 	private UUID id;
 	private String name;
 	private String lastName;

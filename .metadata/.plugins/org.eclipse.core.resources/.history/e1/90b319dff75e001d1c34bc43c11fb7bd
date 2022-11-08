@@ -1,0 +1,5 @@
+package com.solveit.serviceperson.application.dtoassembler;
+
+public interface DTOAssembler {
+
+}

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.overview">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="com.solveit.serviceperson"/>
+		</list>
+		<list key="name">
+			<item value="ServicePerson_Application"/>
+			<item value="ServicePerson_CrossCutting"/>
+			<item value="ServicePerson_Domain"/>
+			<item value="ServicePerson_DTO"/>
+			<item value="ServicePerson_Entity"/>
+			<item value="ServicePerson_Infrastructure"/>
+		</list>
+		<list key="artifactId">
+			<item value="ServicePerson_Application"/>
+			<item value="ServicePerson_CrossCutting"/>
+			<item value="ServicePerson_Domain"/>
+			<item value="ServicePerson_DTO"/>
+			<item value="ServicePerson_Entity"/>
+			<item value="ServicePerson_Infrastructure"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

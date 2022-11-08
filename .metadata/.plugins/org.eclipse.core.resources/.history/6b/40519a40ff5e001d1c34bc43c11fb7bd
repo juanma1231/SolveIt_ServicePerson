@@ -1,0 +1,32 @@
+package com.solveit.serviceperson.application.dtoassembler.implementation;
+
+import com.solveit.serviceperson.application.dtoassembler.DTOAssembler;
+import com.solveit.serviceperson.crosscuting.utils.object.UtilObject;
+import com.solveit.serviceperson.domain.PersonDomain;
+import com.solveit.serviceperson.domain.builder.PersonDomainBuilder;
+import com.solveit.serviceperson.dto.PersonDTO;
+
+public class PersonDTOAssembler implements DTOAssembler<PersonDTO, PersonDomain> {
+
+	@Override
+	public PersonDomain assembleDomain(PersonDTO dto) {
+		PersonDomain domain = PersonDomainBuilder.get().build();
+		if(UtilObject.getUtilObject().isNull(domain)) {
+			domain = PersonDomainBuilder.get().setId(dto.getId()).setName(dto.getName()).setLastName(dto.getLastName())
+					.setIdNumber(dto.getIdNumber()).setIdType(null).setPhoneNumber(dto.getPhoneNumber()).setMail(dto.getMail())
+					.setDescription(dto.getDescription()).setZone(null).setPassword(dto.getPassword()).build();
+		}
+	
+		return domain;
+	}
+
+	@Override
+	public PersonDTO assembleDTO(PersonDomain domain) {
+		PersonDTO dto = new PersonDTO();
+		if(domain != null) {
+			dto = new PersonDTO(domain.getId(),domain.getName(),domain.getLastName(),domain.getIdNumber(),null,domain.getPhoneNumber(),domain.getMail(),domain.getDescription(),null,domain.getPassword());
+		}
+		return null;
+	}
+
+}

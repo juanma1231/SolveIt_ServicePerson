@@ -1,0 +1,5 @@
+package com.solveit.serviceperson.dto;
+
+public class IdTypeDTO {
+
+}
